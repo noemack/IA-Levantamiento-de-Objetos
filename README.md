@@ -70,3 +70,7 @@ Este sistema puede integrarse con APIs (como email, Telegram, Slack, etc.) para 
 Automatización de procesos en logística y fábricas.
 
 Seguridad operativa y monitoreo de tareas.
+
+## 🔗 Enlace al Proyecto
+
+[Ver el código completo ](https://github.com/noemack/IA-Levantamiento-de-Objetos/blob/main/Detecci%C3%B3n_Levantamiento_Objetos.ipynb)
