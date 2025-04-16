@@ -1,12 +1,10 @@
-# IA-Levantamiento-de-Objetos
+## 🔔 Sistema Inteligente de Detección de Tareas con IA
 
-# 🔔 Sistema Inteligente de Detección de Tareas con IA
-
-Este proyecto implementa un sistema de **visión por computadora e inteligencia artificial** para detectar automáticamente si un operario levanta un objeto (como una maleta).
+Este proyecto implementa un sistema de **visión por computadora e inteligencia artificial** para detectar automáticamente si un operario levanta un objeto (como por ejemplo, una maleta).
 
 ## 🎯 Objetivo
 
-Desarrollar una prueba de concepto donde se detecte si un operador **levanta un objeto (como una maleta)** mediante el análisis de movimientos corporales, y desencadenar acciones automatizadas si se detecta una tarea pendiente.
+Desarrollar una prueba de concepto donde se detecte si un operador **levanta un objeto** mediante el análisis de movimientos corporales, y desencadenar acciones automatizadas si se detecta una tarea pendiente.
 
 ## 🛠 Herramientas Utilizadas
 
@@ -45,7 +43,9 @@ El sistema abre la cámara web y analiza los movimientos en vivo.
 
 ## 📌 Resultados Visuales
 "Inicio de levantamiento detectado" → muñecas por debajo de las caderas.
+
 "Objeto levantado" → muñecas por encima de las caderas.
+
 "Esperando actividad" → no se detecta movimiento clave.
 
 ## 📬 Notificaciones Automatizadas (Expansión)
@@ -54,18 +54,19 @@ Este sistema puede integrarse con APIs (como email, Telegram, Slack, etc.) para 
 
 ## 🚀 Ejecución
 
-1. Cloná el repositorios e instalá las librerías necesarias (si aún no las tenés):
+1. Cloná el repositorio e instalá las librerías necesarias:
    ```bash
    pip install opencv-python mediapipe
 
 2. Ejecutá el script:
-python detectar_levantamiento_objeto.py
+   ```bash
+   python detectar_levantamiento_objeto.py
 
-3. Presioná la tecla 'q' para cerrar la ventana de video.
+4. Presioná la tecla 'q' para cerrar la ventana de video.
 
 
 ## 🧠 Aplicaciones
 
 Automatización de procesos en logística y fábricas.
+
 Seguridad operativa y monitoreo de tareas.
-Asistentes inteligentes para trabajadores de campo.
