@@ -2,7 +2,7 @@
 
 # 🔔 Sistema Inteligente de Detección de Tareas con IA
 
-Este proyecto implementa un sistema de visión por computadora que detecta si un operario ha levantado un objeto y, en caso de no completar una tarea asociada (por ejemplo, un informe), envía una **notificación automática** como recordatorio. Esta solución demuestra cómo aplicar herramientas de IA y visión computacional para **automatizar la supervisión de tareas**.
+Este proyecto implementa un sistema de **visión por computadora e inteligencia artificial** para detectar automáticamente si un operario levanta un objeto (como una maleta).
 
 ## 🎯 Objetivo
 
@@ -32,6 +32,23 @@ Se establecen reglas como:
 - Altura de la muñeca < Altura de la cadera → El operario ha levantado el objeto.
 - Comparación de posición inicial y final para confirmar movimiento.
 
+##🧠 Lógica de Detección
+Se rastrean las muñecas (izquierda y derecha) y las caderas.
+Si ambas muñecas están por debajo de la cadera: se interpreta como el inicio del levantamiento.
+Si ambas muñecas están por encima de la cadera: se considera que el objeto fue levantado.
+Si no se detecta una posición clara: se muestra el mensaje "Esperando actividad".
+
+##🎥 Captura en Tiempo Real
+El sistema abre la cámara web y analiza los movimientos en vivo.
+
+##📌 Resultados Visuales
+"Inicio de levantamiento detectado" → muñecas por debajo de las caderas.
+"Objeto levantado" → muñecas por encima de las caderas.
+"Esperando actividad" → no se detecta movimiento clave.
+
+##📬 Notificaciones Automatizadas (Expansión)
+Este sistema puede integrarse con APIs (como email, Telegram, Slack, etc.) para enviar recordatorios automáticos si el operario no completa una acción posterior. Funcionalidad a ampliar en futuras versiones.
+
 ## 🚀 Ejecución
 
 1. Cloná el repositorios e instalá las librerías necesarias (si aún no las tenés):
@@ -49,6 +66,3 @@ python detectar_levantamiento_objeto.py
 Automatización de procesos en logística y fábricas.
 Seguridad operativa y monitoreo de tareas.
 Asistentes inteligentes para trabajadores de campo.
-
-##📩 Notificaciones
-Puedes configurar el sistema para enviar un recordatorio automático si el operador no completa una acción posterior (por ejemplo, completar un informe). Esto puede integrarse con APIs como Twilio, Email SMTP, o sistemas internos de mensajería.
