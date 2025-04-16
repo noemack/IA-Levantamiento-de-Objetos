@@ -32,21 +32,24 @@ Se establecen reglas como:
 - Altura de la muñeca < Altura de la cadera → El operario ha levantado el objeto.
 - Comparación de posición inicial y final para confirmar movimiento.
 
-##🧠 Lógica de Detección
+## 🧠 Lógica de Detección
+
 Se rastrean las muñecas (izquierda y derecha) y las caderas.
 Si ambas muñecas están por debajo de la cadera: se interpreta como el inicio del levantamiento.
 Si ambas muñecas están por encima de la cadera: se considera que el objeto fue levantado.
 Si no se detecta una posición clara: se muestra el mensaje "Esperando actividad".
 
-##🎥 Captura en Tiempo Real
+## 🎥 Captura en Tiempo Real
+
 El sistema abre la cámara web y analiza los movimientos en vivo.
 
-##📌 Resultados Visuales
+## 📌 Resultados Visuales
 "Inicio de levantamiento detectado" → muñecas por debajo de las caderas.
 "Objeto levantado" → muñecas por encima de las caderas.
 "Esperando actividad" → no se detecta movimiento clave.
 
-##📬 Notificaciones Automatizadas (Expansión)
+## 📬 Notificaciones Automatizadas (Expansión)
+
 Este sistema puede integrarse con APIs (como email, Telegram, Slack, etc.) para enviar recordatorios automáticos si el operario no completa una acción posterior. Funcionalidad a ampliar en futuras versiones.
 
 ## 🚀 Ejecución
@@ -61,7 +64,7 @@ python detectar_levantamiento_objeto.py
 3. Presioná la tecla 'q' para cerrar la ventana de video.
 
 
-##🧠 Aplicaciones
+## 🧠 Aplicaciones
 
 Automatización de procesos en logística y fábricas.
 Seguridad operativa y monitoreo de tareas.
